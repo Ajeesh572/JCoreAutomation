@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-22T11:20:26 IST" name="Default suite" finished-at="2024-05-22T11:21:41 IST" duration-ms="75004">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestNGRunner@16610890]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-22T11:20:26 IST" name="Default test" finished-at="2024-05-22T11:21:41 IST" duration-ms="75004">
+      <class name="testrunner.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.TestNGRunner@16610890]" started-at="2024-05-22T11:20:26 IST" name="setUpClass" finished-at="2024-05-22T11:20:26 IST" duration-ms="333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77d381e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestNGRunner@16610890]" started-at="2024-05-22T11:20:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-22T11:20:52 IST" duration-ms="25275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding a Monitor item in cart and verifying sub total"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SearchTest"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestNGRunner@16610890]" started-at="2024-05-22T11:20:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-22T11:21:02 IST" duration-ms="10225" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding a Laptop item in cart and verifying sub total"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SearchTest"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Searched item is Laptop and miss match found is Apple 2023 MacBook Pro (16-inch, M3 Max chip with 16‑core CPU and 40‑core GPU, 48GB Unified Memory, 1TB) - Space Black, Apple 2023 MacBook Pro (14-inch, M3 Max chip with 14‑core CPU and 30‑core GPU, 36GB Unified Memory, 1TB) - Space Black expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Searched item is Laptop and miss match found is Apple 2023 MacBook Pro (16-inch, M3 Max chip with 16‑core CPU and 40‑core GPU, 48GB Unified Memory, 1TB) - Space Black, Apple 2023 MacBook Pro (14-inch, M3 Max chip with 14‑core CPU and 30‑core GPU, 36GB Unified Memory, 1TB) - Space Black expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at stepdefenitions.HomePageSteps.verifySearchResults(HomePageSteps.java:43)
+at ✽.I Verify "Search Results" are for "Laptop" on home page(file:///D:/EclipseWorkspace/uiautomation/src/test/resources/features/SearchTest.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.TestNGRunner@16610890]" started-at="2024-05-22T11:21:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-22T11:21:41 IST" duration-ms="39084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding a two items in cart and verifying sub total"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SearchTest"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.TestNGRunner@16610890]" started-at="2024-05-22T11:21:41 IST" name="tearDownClass" finished-at="2024-05-22T11:21:41 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
